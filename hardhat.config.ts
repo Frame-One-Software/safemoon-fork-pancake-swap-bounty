@@ -67,6 +67,7 @@ const config: HardhatUserConfig = {
 			accounts: {
 				mnemonic,
 			},
+			allowUnlimitedContractSize: true,
 			chainId: chainIds.hardhat,
 		},
 		goerli: createTestnetConfig("goerli"),
@@ -102,6 +103,15 @@ const config: HardhatUserConfig = {
 			},
 			{
 				version: "0.6.12",
+			},
+			{
+				version: "0.4.18",
+			},
+			{
+				version: "0.5.16",
+			},
+			{
+				version: "0.6.6",
 			},
 			{
 				version: "0.7.0",
